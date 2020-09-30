@@ -1,0 +1,169 @@
+object Form1: TForm1
+  Left = 312
+  Height = 336
+  Top = 162
+  Width = 655
+  Caption = 'z25'
+  ClientHeight = 311
+  ClientWidth = 655
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 48
+    Height = 63
+    Top = 208
+    Width = 262
+    Caption = 'Начать'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object kor11: TEdit
+    Left = 48
+    Height = 28
+    Top = 48
+    Width = 100
+    TabOrder = 1
+    Text = '1'
+  end
+  object kor12: TEdit
+    Left = 208
+    Height = 28
+    Top = 48
+    Width = 100
+    TabOrder = 2
+    Text = '1'
+  end
+  object kor21: TEdit
+    Left = 48
+    Height = 28
+    Top = 96
+    Width = 100
+    TabOrder = 3
+    Text = '1'
+  end
+  object kor22: TEdit
+    Left = 208
+    Height = 28
+    Top = 96
+    Width = 100
+    TabOrder = 4
+    Text = '1'
+  end
+  object kor31: TEdit
+    Left = 48
+    Height = 28
+    Top = 152
+    Width = 100
+    TabOrder = 5
+    Text = '1'
+  end
+  object kor32: TEdit
+    Left = 208
+    Height = 28
+    Top = 152
+    Width = 100
+    TabOrder = 6
+    Text = '1'
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 20
+    Top = 53
+    Width = 18
+    Caption = 'x1:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 20
+    Top = 101
+    Width = 18
+    Caption = 'x2:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 20
+    Top = 160
+    Width = 18
+    Caption = 'x3:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 176
+    Height = 20
+    Top = 53
+    Width = 18
+    Caption = 'y1:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 176
+    Height = 20
+    Top = 101
+    Width = 18
+    Caption = 'y2:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 176
+    Height = 20
+    Top = 160
+    Width = 18
+    Caption = 'y3:'
+    ParentColor = False
+  end
+  object vivod: TMemo
+    Left = 344
+    Height = 217
+    Top = 48
+    Width = 256
+    Lines.Strings = (
+      'vivod'
+    )
+    OnChange = vivodChange
+    TabOrder = 7
+  end
+  object MainMenu1: TMainMenu
+    left = 40
+    top = 272
+    object mfile: TMenuItem
+      Caption = 'Файл'
+      OnClick = mfileClick
+      object fopen: TMenuItem
+        Caption = 'Открыть'
+        OnClick = fopenClick
+      end
+      object fsave: TMenuItem
+        Caption = 'Сохранить'
+        OnClick = fsaveClick
+      end
+      object fsaveas: TMenuItem
+        Caption = 'Сохранить в отчёт'
+        OnClick = fsaveasClick
+      end
+    end
+    object spravka: TMenuItem
+      Caption = 'Справка'
+      OnClick = spravkaClick
+    end
+    object vihod: TMenuItem
+      Caption = 'Выход'
+      OnClick = vihodClick
+    end
+  end
+  object OD1: TOpenDialog
+    left = 102
+    top = 273
+  end
+  object SD1: TSaveDialog
+    left = 156
+    top = 278
+  end
+  object SD2: TSaveDialog
+    left = 212
+    top = 278
+  end
+end
