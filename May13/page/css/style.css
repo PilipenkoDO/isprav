@@ -1,0 +1,244 @@
+:root{
+/* Здесь описываются CSS переменные 
+   Имя переменной начинается с --
+   Значение переменной записывается после двоеточия.
+  
+  Все эти перменные используются в коде ниже.
+  
+  Рекомендуется изменять эти переменные, 
+  а не указывать отдельные цвета где-то в середине этой файла.
+ 
+   */
+  
+/*   основной цвет !!! */
+  --primary: ##f779a7;
+
+/* освновной цвет текста !!! */
+  --text: black;
+
+/* дополнительный цвет !!! */
+  --secondary: #671;
+/* долполнительный цвет. светлый вариант !!! */
+  --secondary-light: #5f7;
+  
+/*   Акцидентный цвет и цвет шрифта на его фоне */
+  --accent: #f05;
+  --accent-text: #f0f;
+  
+  --accent2: ##f779a7;  /* используется только для подсветки кнопки акцидентного цвета при наведении */
+  --accent2-text: #ffffff;
+  
+/* основной размер шрифта !!! */
+  --size: 16px;
+  
+/* остальные размеры текста 
+   Они заданы для заголовков и больших элементов 
+  в относительных еденицах. За 1 принят размер текста в body.
+  
+  */
+  --size2: 1.15em;
+  --size3: 1.38em;
+  --size4: 1.9em;
+}
+
+
+/* Для всей страницы !!! */
+body{
+  font-family: Arial, Times;    /* Основной и запасной шрифт */
+  /* Здесь задётся размер шрифта с помошью переменной. Переменная оборачивается в var*/
+  font-weight: 800;
+  font-size: var(--size);    
+/*   цвет шрифта всей страницы */
+  color: var(--text);
+  /* цвет фона всей страницы */
+  background: #ffe8f2;     /* !!! */
+}
+
+
+/* Настройка внешнего вида списков, ссылок и отступа для параграфа */
+ul li{
+  list-style-type: none;}
+
+
+
+.row ul li{
+  list-style-type: square;}
+
+
+a{
+  text-decoration: none;}
+
+p{
+  margin: 5px 10px;}
+
+
+/* заголовоки первого-третьего уровня */
+h1{
+  font-size: var(--size4);
+  margin-left:10px;
+}
+
+h2{
+  font-size: var(--size3)
+}
+
+h3{
+  font-size: var(--size2)
+}
+
+span{
+  margin-left:10px;
+  font-size:26px;
+}
+
+
+
+/* Шапка */
+header{                       
+  background: #f779a7;
+  color: black;
+  border: 2px solid #5c005c;
+  padding: 10px;
+}
+
+/* Заголовок и подзаголовок вместе */
+.Title{
+   font-size:20px; 
+   font-family: Arial;      
+}
+
+
+/* Правая часть заголовка */
+.Title-right{
+  background: #ff33bb;
+  color: var(--text);
+  height:40px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+/* Ссылка в заголовке (справа) */
+.Title-right a{
+  width:100px;
+  background: #e60e7d;
+  color: var(--primary);
+  padding:5px;
+}
+
+/* Посещеная ссылка в заголовке (справа) */
+.Title-right a:visited{
+  background: #e60e7d;
+  color: #000000;
+}
+
+
+
+/* Навигация (строка меню) */
+.main-nav{
+  background: #ff75bc;  /* !!! */
+  font-size: 20px;             /* --- */
+  margin-bottom: 30px;  
+  border: 2px solid #c200c2;
+}
+
+
+/* Текст элемента меню */
+.main-nav li a{
+  text-decoration: none;
+  color: black;                 /* ---- */
+  height: 100%;
+  padding: 29px;
+}
+
+
+/* Текст элемента меню при наведении*/
+.main-nav li a:hover{
+  background:#c200c2 ;        /* --- */
+  color: white;        /* --- */
+}
+
+
+
+
+
+/* Основной раздел */
+.main-section{
+  margin-left: 15px;
+  background: white;
+  border:2px solid #5c005c; 
+}
+
+
+/* Блоки основного раздела */
+.row{
+  background: white;       /* !!! */
+  font-weight: 500;
+  color: var(--text);                        /* !!! */
+  margin-left:2px;
+  padding: 30px;
+  border-bottom:1px dashed #6bb8ff;
+  border
+}
+
+#bt1{
+  border-bottom-color:white;
+}
+
+#row3{
+  border-bottom-color:white;	
+}
+
+/* .cite-author{
+  text-align: right;
+}
+ */
+
+
+/* Для исходного кода */
+code{
+  font-family: courier;             /* !!! */
+  display: block;
+  white-space: pre-wrap   
+}
+
+
+
+
+
+/* Заметная кнопка */
+.click-me{
+	
+  background: #ff75bc;      /* --- */
+  color: #ffffff;
+  border-radius: 7px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;             /* --- */
+
+}
+
+/* Заметная кнопка. При наведении */
+.click-me:hover{
+  background: #c200c2;      /* --- */
+  color: white;
+}
+
+
+
+
+
+/* Нижняя часть сайта, "подвал" */
+footer{
+  color: black; 
+  background: white;
+  border:2px solid #5c005c;
+  margin-top:30px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
