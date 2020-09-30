@@ -1,0 +1,151 @@
+object Vis_Form1: TVis_Form1
+  Left = 650
+  Height = 290
+  Top = 176
+  Width = 562
+  Anchors = []
+  Caption = 'April29'
+  ClientHeight = 265
+  ClientWidth = 562
+  Constraints.MaxWidth = 562
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Visota: TEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Visota_laib
+    AnchorSideRight.Control = StringGrid1
+    AnchorSideBottom.Side = asrBottom
+    Left = 15
+    Height = 28
+    Top = 40
+    Width = 119
+    BorderSpacing.Left = 15
+    BorderSpacing.Top = 25
+    BorderSpacing.Right = 31
+    BorderSpacing.Bottom = 39
+    OnChange = VisotaChange
+    ParentFont = False
+    TabOrder = 0
+    Text = '1'
+  end
+  object vich_button: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Visota
+    AnchorSideRight.Control = StringGrid1
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 15
+    Height = 48
+    Top = 91
+    Width = 119
+    BorderSpacing.Left = 15
+    BorderSpacing.Top = 51
+    BorderSpacing.Right = 31
+    BorderSpacing.Bottom = 16
+    Caption = 'Вычислить'
+    OnClick = vich_buttonClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Visota_laib: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideBottom.Control = Visota
+    AnchorSideBottom.Side = asrBottom
+    Left = 15
+    Height = 20
+    Top = 15
+    Width = 50
+    BorderSpacing.Left = 15
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 100
+    BorderSpacing.Bottom = 30
+    Caption = 'Высота'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Visota_laibClick
+  end
+  object StringGrid1: TStringGrid
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    Left = 180
+    Height = 150
+    Top = 40
+    Width = 328
+    AutoAdvance = aaLeftUp
+    BorderSpacing.Left = 180
+    BorderSpacing.Top = 40
+    BorderSpacing.Bottom = 16
+    ColCount = 2
+    Constraints.MaxWidth = 562
+    DoubleBuffered = True
+    FixedCols = 0
+    ParentDoubleBuffered = False
+    ParentFont = False
+    RowCount = 1
+    TabOrder = 2
+    ColWidths = (
+      147
+      153
+    )
+  end
+  object Res_Label: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 180
+    Height = 20
+    Top = 15
+    Width = 45
+    BorderSpacing.Left = 180
+    BorderSpacing.Top = 15
+    BorderSpacing.Bottom = 199
+    Caption = 'Вывод'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Res_LabelClick
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = '*.txt|*.txt'
+    left = 120
+    top = 440
+  end
+  object SaveDialog1: TSaveDialog
+    left = 190
+    top = 440
+  end
+  object MainMenu1: TMainMenu
+    left = 50
+    top = 430
+    object MenuFile: TMenuItem
+      Caption = 'Файл'
+      OnClick = MenuFileClick
+      object MenuOpen_File: TMenuItem
+        Caption = 'Открыть'
+        OnClick = MenuOpen_FileClick
+      end
+      object MenuSave_File: TMenuItem
+        Caption = 'Сохранить'
+        OnClick = MenuSave_FileClick
+      end
+      object MenuSave_File_report: TMenuItem
+        Caption = 'Сохранить отчёт'
+        OnClick = MenuSave_File_reportClick
+      end
+    end
+    object Menu_spravka: TMenuItem
+      Caption = 'Справка'
+      OnClick = Menu_spravkaClick
+    end
+    object Menu_exit: TMenuItem
+      Caption = 'Выход'
+      OnClick = Menu_exitClick
+    end
+  end
+  object MainMenu2: TMainMenu
+    left = 79
+    top = 328
+  end
+end
