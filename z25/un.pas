@@ -84,7 +84,6 @@ begin
    DataFromForm();
     if flag=true then
       begin
-          vivod.lines.clear;
           x:=strtofloat(kor11.text);
           y:=strtofloat(kor12.text);
           x1:=strtofloat(kor21.text);

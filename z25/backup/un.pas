@@ -79,7 +79,7 @@ begin
     end;
 end;
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TForm1.Button1Click(Sender: TObject);          // описание метода.
 begin
    DataFromForm();
     if flag=true then
