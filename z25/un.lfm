@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 312
+  Left = 325
   Height = 336
-  Top = 162
+  Top = 163
   Width = 655
   Caption = 'z25'
   ClientHeight = 311
@@ -116,10 +116,19 @@ object Form1: TForm1
     ParentColor = False
   end
   object vivod: TMemo
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
     Left = 344
-    Height = 217
+    Height = 223
     Top = 48
-    Width = 256
+    Width = 271
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 48
+    BorderSpacing.Right = 40
+    BorderSpacing.Bottom = 40
     Lines.Strings = (
       'vivod'
     )
