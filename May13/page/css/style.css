@@ -95,9 +95,9 @@ span{
 
 /* Шапка */
 header{                       
-  background: #f779a7;
+  background: #ee9086;
   color: black;
-  border: 2px solid #5c005c;
+  border: 2px solid #cc6c5c;
   padding: 10px;
 }
 
@@ -110,7 +110,7 @@ header{
 
 /* Правая часть заголовка */
 .Title-right{
-  background: #ff33bb;
+  background: #6e3727;
   color: var(--text);
   height:40px;
   display: flex;
@@ -121,14 +121,14 @@ header{
 /* Ссылка в заголовке (справа) */
 .Title-right a{
   width:100px;
-  background: #e60e7d;
+  background: #6c3b2a;
   color: var(--primary);
   padding:5px;
 }
 
 /* Посещеная ссылка в заголовке (справа) */
 .Title-right a:visited{
-  background: #e60e7d;
+  background: #8f4d38;
   color: #000000;
 }
 
@@ -136,10 +136,10 @@ header{
 
 /* Навигация (строка меню) */
 .main-nav{
-  background: #ff75bc;  /* !!! */
+  background: #ffa089;  /* !!! */
   font-size: 20px;             /* --- */
   margin-bottom: 30px;  
-  border: 2px solid #c200c2;
+  border: 2px solid #cc6c5c;
 }
 
 
@@ -154,7 +154,7 @@ header{
 
 /* Текст элемента меню при наведении*/
 .main-nav li a:hover{
-  background:#c200c2 ;        /* --- */
+  background:#cc6c5c ;        /* --- */
   color: white;        /* --- */
 }
 
@@ -209,7 +209,7 @@ code{
 /* Заметная кнопка */
 .click-me{
 	
-  background: #ff75bc;      /* --- */
+  background: #8f4d38;      /* --- */
   color: #ffffff;
   border-radius: 7px;
   padding: 8px 20px;
@@ -221,7 +221,7 @@ code{
 
 /* Заметная кнопка. При наведении */
 .click-me:hover{
-  background: #c200c2;      /* --- */
+  background: #783d22;      /* --- */
   color: white;
 }
 
